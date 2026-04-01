@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> VIP</title>
+<title>VIP</title>
 
-<!-- 🔥 META PIXEL -->
+<!-- ✅ META PIXEL (ONLY NEW PIXEL) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,13 +16,13 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '2693505621048370');
+fbq('init', '2487060518421123');
 fbq('track', 'PageView');
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2693505621048370&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=2487060518421123&ev=PageView&noscript=1"/>
 </noscript>
 
 <style>
@@ -36,7 +36,6 @@ body {
   min-height: 100vh;
 }
 
-/* 🔥 LOADER */
 #loader {
   position: fixed;
   width: 100%;
@@ -51,7 +50,6 @@ body {
   font-weight: bold;
 }
 
-/* HIDE MAIN UNTIL LOAD */
 #main {
   display: none;
 }
@@ -101,7 +99,6 @@ body {
   font-size: 15px;
 }
 
-/* 🔥 LIVE COUNTER */
 .live {
   color: red;
   font-weight: bold;
@@ -139,12 +136,12 @@ body {
 
 <body>
 
-<!-- 🔥 LOADING SCREEN -->
+<!-- LOADER -->
 <div id="loader">
   Loading VIP Access...
 </div>
 
-<!-- 🔥 MAIN CONTENT -->
+<!-- MAIN -->
 <div id="main">
   <div class="container">
     <div class="card">
@@ -153,10 +150,9 @@ body {
         <img src="https://i.ibb.co/DgPJ407F/photo.jpg" alt="photo">
       </div>
 
-      <h2> VIP SHOT 👑</h2>
+      <h2>VIP SHOT 👑</h2>
       <p>💰 JOIN VIP TELEGRAM 💰</p>
 
-      <!-- 🔥 FAKE LIVE COUNTER -->
       <div class="live">
         🔴 <span id="count">2300</span> People Joining Now...
       </div>
@@ -173,7 +169,6 @@ body {
   </div>
 </div>
 
-<!-- 🔥 SCRIPT -->
 <script>
 // LOADER
 setTimeout(() => {
@@ -181,14 +176,14 @@ setTimeout(() => {
   document.getElementById("main").style.display = "block";
 }, 2000);
 
-// FAKE LIVE COUNTER
+// FAKE COUNTER
 let count = 187;
 setInterval(() => {
   count += Math.floor(Math.random() * 3);
   document.getElementById("count").innerText = count;
 }, 2000);
 
-// CLICK ACTION
+// BUTTON ACTION
 function joinNow() {
   fbq('track', 'Lead');
   window.location.href = "https://t.me/+Z3S-KK4teztkYzI1";
