@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIP</title>
+<title>VIP Access</title>
 
-<!-- ✅ META PIXEL (ONLY OLD PIXEL) -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,14 +16,15 @@ t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1274415347468684');  // ✅ OLD PIXEL ACTIVE
+fbq('init', '2034918053786543');
 fbq('track', 'PageView');
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1274415347468684&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=2034918053786543&ev=PageView&noscript=1"/>
 </noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 body {
@@ -55,14 +55,9 @@ body {
   display: none;
 }
 
-.container {
-  width: 100%;
-  padding: 15px;
-}
-
 .card {
   width: 100%;
-  max-width: 350px;
+  max-width: 360px;
   margin: auto;
   padding: 25px;
   border-radius: 25px;
@@ -78,7 +73,6 @@ body {
   border-radius: 50%;
   margin: auto;
   overflow: hidden;
-  box-shadow: 0 0 25px white, 0 0 50px #38bdf8;
   border: 3px solid white;
 }
 
@@ -88,22 +82,15 @@ body {
   object-fit: cover;
 }
 
-.card h2 {
+h2 {
   margin: 15px 0;
-  font-size: 22px;
-  font-weight: bold;
   color: #0c4a6e;
-}
-
-.card p {
-  font-weight: bold;
-  font-size: 15px;
 }
 
 .live {
   color: red;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .btn {
@@ -123,11 +110,6 @@ body {
   color: white;
 }
 
-.btn2 {
-  background: linear-gradient(45deg, #0ea5e9, #38bdf8);
-  color: black;
-}
-
 .btn:active {
   transform: scale(0.95);
 }
@@ -138,35 +120,26 @@ body {
 <body>
 
 <!-- LOADER -->
-<div id="loader">
-  Loading VIP Access...
-</div>
+<div id="loader">Loading VIP Access...</div>
 
 <!-- MAIN -->
 <div id="main">
-  <div class="container">
-    <div class="card">
+  <div class="card">
 
-      <div class="profile-pic">
-        <img src="https://i.ibb.co/DgPJ407F/photo.jpg" alt="photo">
-      </div>
-
-      <h2>VIP SHOT 👑</h2>
-      <p>💰 JOIN VIP TELEGRAM 💰</p>
-
-      <div class="live">
-        🔴 <span id="count">2300</span> People Joining Now...
-      </div>
-
-      <button class="btn btn1" onclick="joinNow()">
-        JOIN VIP TELEGRAM 👑
-      </button>
-
-      <button class="btn btn2" onclick="joinNow()">
-        SUBSCRIBE NOW 🚀
-      </button>
-
+    <div class="profile-pic">
+      <img src="https://i.ibb.co/DgPJ407F/photo.jpg" alt="photo">
     </div>
+
+    <h2>VIP SHOT 👑</h2>
+
+    <div class="live">
+      🔴 <span id="count">2300</span> People Joining Now...
+    </div>
+
+    <button class="btn btn1" onclick="joinNow()">
+      JOIN VIP TELEGRAM 👑
+    </button>
+
   </div>
 </div>
 
@@ -184,10 +157,16 @@ setInterval(() => {
   document.getElementById("count").innerText = count;
 }, 2000);
 
-// BUTTON ACTION
+// BUTTON CLICK + TRACKING
 function joinNow() {
-  fbq('track', 'Lead'); // ✅ Lead Event
-  window.location.href = "https://t.me/+Z3S-KK4teztkYzI1";
+
+  // 🔥 Meta Pixel Lead Event
+  fbq('track', 'Lead');
+
+  // Redirect after small delay (ensures tracking fires)
+  setTimeout(() => {
+    window.location.href = "https://t.me/+iAwIv1nYQhkxYjM1";
+  }, 300);
 }
 </script>
 
